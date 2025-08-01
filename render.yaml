@@ -2,6 +2,6 @@ services:
   - type: cron
     name: logement-checker
     env: python
-    schedule: "@hourly"
+    schedule: "* * * * *"
     buildCommand: "pip install -r requirements.txt"
     startCommand: "python logement_checker.py"
